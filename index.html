@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" href="java.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
+ <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<head>
+	<title>Rays Concepts</title>
+</head>
+<body>
+	<div>
+	<h1 id="title-text">Rays Concept</h1>
+	<img src="rc-logo.png" id="logo">
+</div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Services">Services</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+
+<!---Creating My Slide Show-->
+<h2>Our Services</h2>
+<p>Clients Sucess is Our Priority</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">Welcome!</div>
+  <img src="passport.jpeg" style="width:100%">
+  <div class="text">Mission</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">Welcome!</div>
+  <img src="travel1.jpeg" style="width:100">
+  <div class="text">OurWorld</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">RC..</div>
+  <img src="travel 2.jpeg" style="width:100%">
+  <div class="text">StayPositive</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+	<script>
+		var slideIndex = 0;
+showSlides();
+
+function showSlides()
+{
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+    {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) 
+    {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	</script>
+
+<div class="services">
+  <img src="airplane.jpeg" class="service-image">
+  <!--<p>Ticketing Has Always Been Easy With Us..We Value The Travelling Experience Of Our Clients You Can Always Count On Us For A Discounted And Excellent Air Ticket With A Good Airline</p>-->
+  <img src="legal.jpeg" class="service-image">
+  <img src="arrangements.jpg" class="service-image">
+</div>
+	
+<footer>
+  <div class="form-container">
+<form>
+  Name:<br>
+  <input type="text" placeholder="John Doe" size="65"/><br>
+  Email:<br>
+  <input type="text" placeholder="john@doe.com" size="65"/><br>
+  Message:<br>
+  <textarea placeholder="your message..." cols="63" rows="5"></textarea><br>
+  <input type="button" value="send"/>
+</form>
+</div>
+ <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://github.com/Gavjoswil">
+                  <i class="fa fa-github fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/gavin-williams-951709148/">
+                  <i class="fa fa-linkedin fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+</footer>
+</body>
+  
+ <!---Contact-->
+
+</html>
