@@ -224,6 +224,9 @@ $social-width: 20%;
   @include box-sizing(border-box);
 }
 
+
+
+
 html, body {
   font-family: Raleway, sans-serif;  
   background-color: #ccf2ff;
@@ -244,4 +247,15 @@ p{
   color: #333;
   background-color: rgba(255, 255, 255, .8);
 }
+
+.pictures{
+  width:640px;
+  height:431px;
+  margin: 0 auto;
+}
+
+.About{
+  text-align: center;
+}
+
 

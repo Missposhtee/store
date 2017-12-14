@@ -2,10 +2,13 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <link rel="stylesheet" type="text/css" href="main.css">
 <script type="text/javascript" href="java.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 <head>
 	<title>Rays Concepts</title>
 </head>
@@ -16,13 +19,14 @@
 </div>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="js-scroll-trigger" href="#home">Home</a></li>
   <li><a href="#Services">Services</a></li>
   <li><a href="#contact">Contact</a></li>
   <li style="float:right"><a href="#about">About</a></li>
 </ul>
 
 <!---Creating My Slide Show-->
+<section id =#home# class="Home">
 <h2>Our Services</h2>
 <p>Clients Sucess is Our Priority</p>
 
@@ -79,18 +83,52 @@ function showSlides()
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 	</script>
+</section>
 
-<div class="services">
-  <img src="airplane.jpeg" class="service-image">
-  <!--<p>Ticketing Has Always Been Easy With Us..We Value The Travelling Experience Of Our Clients You Can Always Count On Us For A Discounted And Excellent Air Ticket With A Good Airline</p>-->
-  <img src="legal.jpeg" class="service-image">
-  <img src="arrangements.jpg" class="service-image">
+
+<div>
+  <div class = "row" >
+     <div  class ="col-sm-6">
+       <div>
+         <img src="hotel.jpg" class= "pictures img-responsive">
+       </div>
+       <div><p><strong>We Handle Reservation Of Hotel</strong></p></div>
+     </div>
+     <div class ="col-sm-6">
+       <div>
+         <img src="travel_3.jpg" class= "pictures img-responsive">
+       </div>
+       <div><p><strong>Count On Us For The Best Adventure On Ur Vacation</strong></p></div>
+     </div>
+
+  <div class = "row" >
+     <div  class ="col-sm-6">
+        <div>
+         <img src="airplane.jpeg" class= "pictures img-responsive" >
+        </div>
+        <div><p><strong>You Can Count On Us For The Best Ticket Fare And A Good Airline</strong></p></div>
+     </div>
+     <div class ="col-sm-6">
+       <div>
+         <img src="legal.jpeg" class= "pictures img-responsive">
+       </div>
+       <div><p><strong> Sealed Legal Agreements is Availabe Upon Request</strong></p></div>
+     </div>
+
+
 </div>
-	
-<section>
- 
+
+<div class = "About">
+  <h1>About Us</h1>
+  <p>A travel agency is a private retailer or public service that provides travel and tourism related services to the public on behalf of suppliers such as activities, airlines, car rentals, cruise lines, hotels, railways, travel insurance, and package tours. In addition to dealing with ordinary tourists most travel agencies have a separate department devoted to making travel arrangements for business travelers and some travel agencies specialize in commercial and business travel only. There are also travel agencies that serve as general sales agents for foreign travel companies, allowing them to have offices in countries other than where their headquarters are located.</p>
+  </div>
   
-  
+<div>
+  <p><strong>Download Our Service Form Here<br><a href="file:///C:/Users/missp/Desktop/Rays%20Concept.pdf" class="btn btn-lg btn-light">Download!</a><br>Contact 0706256170</strong></p>
+</div>
+
+
+
 
   
  <div class="form-container">
@@ -108,6 +146,8 @@ function showSlides()
 
 
 </div>
+
+
 <!---
  <ul class="list-inline">
               <li class="list-inline-item">
